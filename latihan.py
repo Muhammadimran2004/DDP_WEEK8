@@ -1,10 +1,12 @@
-def profil(nama, alamat, gender, umur, hoby):
-    print("nama saya adalah", nama)
-    print("alamat saya", alamat)
-    print(gender)
-    print("saya berrmur", umur)
-    print("hoby saya adalah", hoby)
-    profil("imran", "Bogor", "laki-laki", "19 tahun", "futsal")
+def profile(nama, alamat, gender, umur, hoby):
+    print("nama :", nama)
+    print("allamat :", alamat)
+    print("gender :", gender)
+    print("nama saya :", nama)
+    print("umur :", umur)
+    print("hoby :", hoby)
+    
+profile("muhammad imran", "Bogor", "Laki-laki", "19", "main futsal")
 
 
 def tentukan_kelulusan(nilai):
@@ -18,15 +20,14 @@ def tentukan_kelulusan(nilai):
         return "Istimewa"
     else:
         return "Nilai tidak valid"
+    
 
 nilai = 70
 print(tentukan_kelulusan(nilai))
 
-def cetak_bilangan_ganjil(batas):
-    for nilai in range(1, batas + 1, 2):
-        print(nilai)
-
-
-batas_tertinggi = 100
-cetak_bilangan_ganjil(batas_tertinggi)
-
+print()
+def bilangan_ganjil(angka):
+    for angka in range(1, angka+1, 2):
+        print(angka, end=" ")
+bilangan_ganjil(100)
+ 
